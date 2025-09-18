@@ -36,9 +36,9 @@
                                 style="margin-right: 8px;"></i>0399849971</a></li>
                 </ul>
 
-                <div class="menu_icon">
+                <!-- <div class="menu_icon">
                     <i class="fa fa-bars"></i>
-                </div>
+                </div> -->
 
             </div>
         </div>
@@ -106,7 +106,7 @@
                 <a href="mailto:ngthanhdat.7019@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
                 <a href="https://gitlab.com/thanhdat-30" target="_blank"><i class="fa-brands fa-gitlab"></i></a>
                 <a href="https://github.com/thanhdat-30" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="tel:0399849971" target="_blank"><i class="fa fa-phone"></i></a>
+                <a href="https://zalo.me/0399849971" target="_blank"><i class="fa fa-phone"></i></a>
                 <a href="https://www.facebook.com/nguyen.thanh.at.496681" target="_blank"><i
                         class="fa-brands fa-facebook"></i></a>
             </div>
@@ -259,29 +259,63 @@
         <div class="container">
             <div class="project-title">
                 <h4>DỰ ÁN CỦA TÔI</h4>
-                <p>Khám phá các dự án của tôi, click vào 1 dự án bất kì để chuyển hướng.</p>
+                <p>Khám phá các dự án của tôi, click vào 1 tên dự án bất kì để chuyển hướng.</p>
             </div>
             <div class="projects">
                 <!-- 1st Project -->
                 <div class="project">
-                    <i class="fa fa-coffee"></i>
-                    <h4>SnakeGame Using Java</h4>
-                    <p>This is a simple implementation of the classic Snake game using Java and Swing.</p>
+                    <a href="http://203.145.46.237:5002" target="_blank">
+                        <i class="fa fa-coffee"></i>
+                        <h4>THECHILLCAFE</h4>
+                        <p>This is a simple implementation of the classic Snake game using Java and Swing.</p>
+                    </a>
                 </div>
                 <!-- 2nd Project -->
                 <div class="project">
-                    <i class="fa fa-car"></i>
-                    <h4>Nightguard</h4>
-                    <p>An innovative embedded system solution for safer driving, combining matrix LED technology to
-                        reduce headlight glare and vibration sensors to detect potholes, enhancing road safety and
-                        minimizing accidents</p>
+                    <a href="https://iotsunshine.store" target="_blank">
+                        <i class="fa fa-car"></i>
+                        <h4>OFFICEFINDER</h4>
+                        <p>An innovative embedded system solution for safer driving, combining matrix LED technology to
+                            reduce headlight glare and vibration sensors to detect potholes, enhancing road safety and
+                            minimizing accidents</p>
+                    </a>
                 </div>
                 <!-- 3rd Project -->
                 <div class="project">
-                    <i class="fa fa-desktop"></i>
-                    <h4>Portfolio Website</h4>
-                    <p>Created a portfolio website using HTML, CSS, and JavaScript, It serves as a platform to introduce
-                        myself, share my projects, and provide information about my education and internship.</p>
+                    <a href="https://webapp.dulichcohoa.com" target="_blank">
+                        <i class="fa fa-desktop"></i>
+                        <h4>DULICHCOHOA</h4>
+                        <p>Created a portfolio website using HTML, CSS, and JavaScript, It serves as a platform to
+                            introduce
+                            myself, share my projects, and provide information about my education and internship.</p>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="http://203.145.46.237:5003" target="_blank">
+                        <i class="fa fa-desktop"></i>
+                        <h4>FASHIONSHOP</h4>
+                        <p>Created a portfolio website using HTML, CSS, and JavaScript, It serves as a platform to
+                            introduce
+                            myself, share my projects, and provide information about my education and internship.</p>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="https://xtc.dungbeo.id.vn" target="_blank">
+                        <i class="fa fa-desktop"></i>
+                        <h4>XTC(SAPO)</h4>
+                        <p>Created a portfolio website using HTML, CSS, and JavaScript, It serves as a platform to
+                            introduce
+                            myself, share my projects, and provide information about my education and internship.</p>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="https://thuvien.viendong.edu.vn" target="_blank">
+                        <i class="fa fa-desktop"></i>
+                        <h4>VIENDONGLIBRARY</h4>
+                        <p>Created a portfolio website using HTML, CSS, and JavaScript, It serves as a platform to
+                            introduce
+                            myself, share my projects, and provide information about my education and internship.</p>
+                    </a>
                 </div>
 
             </div>
@@ -309,12 +343,28 @@
         </div>
     </section> -->
 
+    <button id="scrollTopBtn" title="Lên đầu trang">&#8679;</button>
+
     <!-------------------------- JS -------------------------->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
+    <script>
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        }
+        scrollTopBtn.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
 
     <!-------------------------- Footer section -------------------------->
     <footer class="footer">
